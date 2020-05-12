@@ -1,6 +1,6 @@
 # DataBasesDemo
 ## 1.引子FMDB
-[FMDB详解](https://github.com/Tencent/wcdb/wiki/Swift-%E5%85%B3%E4%BA%8E%20WCDB%20Swift)
+[FMDB详解](https://www.jianshu.com/p/45267dfca32f)
 [FMDB的git链接](https://github.com/ccgus/fmdb)
 
 1.1 它基于` SQLite` 封装，对于有` SQLite` 和` ObjC` 基础的开发者来说，简单易懂，可以直接上手；而缺点也正是在此，` FMDB` 只是将` SQLite` 的C接口封装成了` ObjC` 接口，没有做太多别的优化，即所谓的胶水代码(` Glue Code` )。使用过程需要用大量的代码拼接` SQL` 、拼装` Object` ，并不方便。
