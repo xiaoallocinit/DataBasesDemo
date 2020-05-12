@@ -117,7 +117,7 @@ class RealmSwiftViewController: UIViewController {
     @objc private func addData() {
         let id = self.dataArr.last?.id ?? "1"
         let addID = (Int(id)!+3)
-        BoxModel.save(boxName: "丰巢\(id)", num: Int(arc4random_uniform(100)), id: String(addID))
+        BoxModel.save(boxName: "丰巢\(addID)", num: Int(arc4random_uniform(100)), id: String(addID))
         getData()
     }
     // MARK: 删（清空本地所有数据）

@@ -24,13 +24,13 @@ class BoxModel: Object {
     /*
      重写 Object.ignoredProperties() 可以防止 Realm 存储数据模型的某个属性。Realm 将不会干涉这些属性的常规操作，它们将由成员变量(var)提供支持，并且您能够轻易重写它们的 setter 和 getter。忽略属性（不会映射到DB）
      */
-    override static func ignoredProperties() -> [String] {
-           return ["num"]
-    }
-    /// 重写 Object.indexedProperties() 方法可以为数据模型中需要添加索引的属性建立索引
-    override static func indexedProperties() -> [String] {
-        return ["num"]
-    }
+//    override static func ignoredProperties() -> [String] {
+//           return ["num"]
+//    }
+//    /// 重写 Object.indexedProperties() 方法可以为数据模型中需要添加索引的属性建立索引
+//    override static func indexedProperties() -> [String] {
+//        return ["num"]
+//    }
 
     // MARK: model保存
     static func save(boxName: String, num: Int, id: String) {
